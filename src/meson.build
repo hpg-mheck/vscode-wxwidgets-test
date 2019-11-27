@@ -1,0 +1,46 @@
+expletives_sources = [
+   'activityindicator.cpp',
+   'bmpcombobox.cpp',
+   'button.cpp',
+   'checkbox.cpp',
+   'choice.cpp',
+   'clrpicker.cpp',
+   'combobox.cpp',
+   'datepick.cpp',
+   'dirctrl.cpp',
+   'dirpicker.cpp',
+   'editlbox.cpp',
+   'filectrl.cpp',
+   'filepicker.cpp',
+   'fontpicker.cpp',
+   'gauge.cpp',
+   'headerctrl.cpp',
+   'hyperlnk.cpp',
+   'itemcontainer.cpp',
+   'listbox.cpp',
+   'native.cpp',
+   'notebook.cpp',
+   'odcombobox.cpp',
+   'radiobox.cpp',
+   'searchctrl.cpp',
+   'slider.cpp',
+   'spinbtn.cpp',
+   'statbmp.cpp',
+   'static.cpp',
+   'textctrl.cpp',
+   'timepick.cpp',
+   'toggle.cpp',
+   'widgets.cpp'
+]
+
+executable('wxtest-widgets',
+   expletives_sources,
+   dependencies : [
+      glibdep,
+      gtkdep,
+      threadsdep,
+      wxdep],
+   include_directories : incdirs,
+   install : true
+)
+
