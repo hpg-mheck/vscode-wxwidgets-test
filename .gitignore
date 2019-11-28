@@ -43,3 +43,6 @@ RELEASE
 # Profiling build directory
 PROFILING
 
+# Editor: Visual Studio Code
+.vscode/ipch
+
